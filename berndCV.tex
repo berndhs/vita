@@ -1,0 +1,133 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt,letterpaper]{moderncv} % use larger type; default would be 10pt
+
+\name{Bernd H}{Stramm}
+
+\photo[56pt][0.4pt]{bhs.png}
+
+%% ModernCV themes
+%\moderncvstyle{fancy}
+%\moderncvcolor{black}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvstyle[black]{classic}
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better
+\usepackage{section}
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{empty} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+\lfoot{}\cfoot{}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\usepackage[english]{babel}
+\usepackage{setspace}
+\singlespace
+%\title{Curriculum Vitae: Bernd H Stramm}
+\address{isTheStreet}{isTheCity, isTheState, isTheCountry, isThePostal}
+\mobile{isThePhone}
+\email{bernd.stramm@gmail.com}
+\homepage{github.com/berndhs}
+
+\renewcommand{\baselinestretch}{1.0} 
+
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+%\maketitle
+\makecvtitle
+\section{\em{\LARGE{Work Experience}}}
+\renewcommand{\baselinestretch}{1.0}
+\singlespace 
+\begin{spacing}{1.0}
+
+\cventry{2005 -- current}{Member and Project Lead of Open Source Projects}
+	{Original programming work} {In teams and for independent projects, including design, team integration, technical implementation, packaging RPM and Deb for Linux: Fedora, Ubuntu, MeeGo / Harmattan, x86, ARM , Win32.}
+	{Project Management for several mult-layer Projects and cross functional Teams.}{}{}
+\cvlistitem{Social Networking Applications: XMPP egalite, IRC e6irc, Direct Chat e6}
+\cvlistitem{Open Source Web Browsers dooble, miniweb}
+\cvlistitem{Utilities: Text Editor deeptrim, Notekeeper notably, RSS Reader App carpo}
+\cvlistitem{Discrete Event Simulation, Websites, System Admin.  Qt Framework, C++, C, Shell, Linux, WebKit, PHP, Javascript, MySql, SQLite.}
+\cvlistitem{See https://build.opensuse.org/project/show/home:berndhs}
+\cvlistitem{See https://github.com/berndhs}
+\end{spacing}
+
+\cventry{03/2016 -- 09/2016}{Member Technical Staff IV }{Panasonic Avionics}{Software Engineering}{Lake Forest, CA \small{In-Flight Entertainment}}{}
+\cvlistitem{C++ models for support of new QML features}
+\cvlistitem{QML Test code to exercise the new C++ models}
+\cvlistitem{Windows version of a customization tool for user interfaces}
+\cventry{11/2015 -- 02/2016}{Software Engineer}{BITU}{Irvine, California}{Robotic Medical Devices}{}
+\cvlistitem{C++ models for support of new QML features}
+\cvlistitem{QML Test code to exercise the new C++ models}
+
+\cventry{12/2011 -- 07/2015}{Consultant \Small{(Software Engineering)}}{ICS Inc (ics.com)}{ Laguna Beach, California, USA}	
+	{UI level software for airline companies}{Emirates Airlines, Dubai Air Wing}
+\cvlistitem{Qt/QML, C++, SQLite}
+
+\cventry{2000 -- 2004}{Staff Engineer}{Computer Architecture} {ST Microelectronics}{San Diego, CA, USA}{}
+\cvlistitem{Heterogeneous Multiprocessor Architecture}
+\cvlistitem{System Modeling using C++, Linux, yacc, bash, define small languages}
+
+\cventry{2000 -- 2000}{Staff Engineer}{Accordion Networks}{Fremont, CA, USA}{}{}
+\cvlistitem{Embedded Database Design and Implementation, Telephone/Communications}
+\cvlistitem{C++, VxWorks}
+
+\cventry{1999	 -- 1999}{Senior Software Engineer}{ECI Telecom}{Jacksonville, FL, USA}{}{}
+\cvlistitem{Subsystem Design}
+\cvlistitem{System Requirements}
+\cvlistitem{Reliability Requirements}
+
+\cventry{1996 -- 1998}{	Senior Engineer} {Qualcomm}{San Diego, CA, USA}{}{}
+\cvlistitem{Subsystem Software Design, Implementation} 
+\cvlistitem{Real Time Embedded Telephony (GlobalStar)}
+\cvlistitem{C++, VxWorks/Qualcomm-REX, SunOS on 68060}
+
+\cventry{1992 -- 1994}{	Software Engineering}{Buslogic}{San Diego, CA, USA}{}{}
+\cvlistitem{Device Driver Level RAID on x86}
+\cvlistitem{Performance Evaluation Tools}
+\cvlistitem{C, Unix, Novell NetWare}
+
+\section{\em{\LARGE{Education}}}
+\cventry{\texbf{Ph.D.} \small{Computer Science}}{University of California}{San Diego}{California, USA}{}{Performance Prediction in Parallel Processing}
+\cventry{M.Sc. Computer Science}{University of California}{San Diego}{California, USA}{}{}{}
+\cventry{B.Sc. Computer Science}{Brock University}{St. Catharines}{Ontario, Canada}{}{}{}
+
+\end{document}
